@@ -12,7 +12,7 @@
 body {
 	font: 12px/18px sans-serif,Arial, Tahoma, Verdana ;
     color: #ffffff;
-    background-color: #0d2835;
+    background-color: #081c28;
 }
 a {
 	color: white;
@@ -82,7 +82,7 @@ background-image: -webkit-gradient(
         linear,
         left top,
         right top,
-        color-stop(0.20, #0C2634),
+        color-stop(0.20, #102e3e),
         color-stop(0.50, #154D6B),
         color-stop(0.8, #0C2634)
     );
@@ -207,7 +207,7 @@ background-image: -webkit-gradient(
 -----------------------------------------------------------------------------*/
 #middle {
     clear: both;
-	border-left: 200px solid #0d2835;
+	border-left: 200px solid #081c28;
 	height: 1%;
 	position: relative;
 }
@@ -226,6 +226,13 @@ background-image: -webkit-gradient(
 	padding: 20px 20px;
 }
 
+.itemBlock {
+    border-image: url(../img/border.png) 25 repeat;
+    border-width: 25px;
+    width: 667px;
+    height: 200px;
+}
+
 
 /* Sidebar Left
 -----------------------------------------------------------------------------*/
@@ -233,7 +240,14 @@ background-image: -webkit-gradient(
 	float: left;
 	width: 200px;
 	position: relative;
-	background: #0d2734;
+	background: #0e2837;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0.20, #0e2837),
+        color-stop(1.0, #081c28)
+    );
 	left: -200px;
 }
 
@@ -258,12 +272,10 @@ background-image: -webkit-gradient(
 #leftNav li:hover
 {
     background-image: url('../img/lm_hover.png');
-    margin-left: 20px;
 }
 
 #leftNav li.active
 {
-    //margin: 20px 0px;
     background-image: url('../img/lm_active.png');
 }
 
@@ -271,14 +283,25 @@ background-image: -webkit-gradient(
 {
 
     display: block;
-    position: relative;
     font-family: pixel_font;
     font-size: 16px;
     text-decoration: none;
     color: #000000;
     width: 174px;
     height: 62px;
+    margin: 20px 40px;
+}
 
+.leftMenuButtonActive
+{
+    display: block;
+    font-family: pixel_font;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000000;
+    width: 174px;
+    height: 62px;
+    margin: 20px 80px;
 }
 
 
@@ -287,5 +310,5 @@ background-image: -webkit-gradient(
 -----------------------------------------------------------------------------*/
 #footer {
 	height: 100px;
-	background: #BFF08E;
+	background: #081c28;
 }
